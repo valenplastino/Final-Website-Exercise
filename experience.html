@@ -6,6 +6,10 @@
   <title>Experience - Valentin Plastino</title>
   <link rel="stylesheet" href="stylesheets/style.css" />
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       background-color: #f4f4f4;
       font-family: sans-serif;
@@ -75,9 +79,8 @@
       background-color: white;
       border-radius: 12px;
       padding: 25px;
-      flex: 1 1 calc(50% - 20px);
+      flex: 1 1 48%;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-      min-height: 360px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -158,13 +161,13 @@
         flex: 1 1 100%;
       }
 
+      .card-header h3 {
+        font-size: 16px;
+      }
+
       .download-btn {
         font-size: 14px;
         padding: 10px 16px;
-      }
-
-      .card-header h3 {
-        font-size: 16px;
       }
     }
   </style>
@@ -187,7 +190,6 @@
   <main>
     <h2>Experience</h2>
 
-    <!-- Row 1: Better Baltimore Rents -->
     <div class="grid-row">
       <div class="card">
         <div class="card-header">
@@ -206,7 +208,6 @@
       </div>
     </div>
 
-    <!-- Row 2: Projects -->
     <div class="grid-row">
       <div class="card">
         <div class="card-header">
