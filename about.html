@@ -70,24 +70,24 @@
       padding: 25px;
       box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
       margin-bottom: 20px;
+    }
+
+    .card-header {
       display: flex;
-      align-items: flex-start;
-      gap: 15px;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
     }
 
     .icon-emoji {
-      font-size: 24px;
-      margin-top: 4px;
-    }
-
-    .card-content {
-      flex: 1;
+      font-size: 22px;
+      flex-shrink: 0;
     }
 
     .card h3 {
-      color: #2c3e50;
-      margin-bottom: 10px;
+      margin: 0;
       font-size: 20px;
+      color: #2c3e50;
     }
 
     .card p {
@@ -152,13 +152,23 @@
         display: flex;
       }
 
-      .card {
-        flex-direction: column;
-        align-items: flex-start;
+      .card-header {
+        flex-direction: row; /* keeps emoji to the left even on mobile */
+        align-items: center;
+      }
+
+      .card h3 {
+        font-size: 18px;
       }
 
       .icon-emoji {
-        margin-bottom: 10px;
+        font-size: 20px;
+        margin-right: 8px;
+      }
+
+      .download-btn {
+        font-size: 14px;
+        padding: 10px 20px;
       }
     }
   </style>
@@ -182,35 +192,35 @@
     <h2 class="section-title">About</h2>
 
     <div class="card">
-      <div class="icon-emoji">👤</div>
-      <div class="card-content">
+      <div class="card-header">
+        <div class="icon-emoji">👤</div>
         <h3>Personal Background</h3>
-        <p>I’m 23 years old and originally from Argentina. I moved to the United States 10 years ago and am fluent in both Spanish and English.</p>
       </div>
+      <p>I’m 23 years old and originally from Argentina. I moved to the United States 10 years ago and am fluent in both Spanish and English.</p>
     </div>
 
     <div class="card">
-      <div class="icon-emoji">🎓</div>
-      <div class="card-content">
+      <div class="card-header">
+        <div class="icon-emoji">🎓</div>
         <h3>Academic Background</h3>
-        <p>I’m currently pursuing a Master’s in Management at Georgetown University with a GPA of 3.77. I earned my Bachelor of Science in Management and Marketing from the University of Maryland, where I also completed a minor in Real Estate Development focused on investment and financial analysis.</p>
       </div>
+      <p>I’m currently pursuing a Master’s in Management at Georgetown University with a GPA of 3.77. I earned my Bachelor of Science in Management and Marketing from the University of Maryland, where I also completed a minor in Real Estate Development focused on investment and financial analysis.</p>
     </div>
 
     <div class="card">
-      <div class="icon-emoji">🤝</div>
-      <div class="card-content">
+      <div class="card-header">
+        <div class="icon-emoji">🤝</div>
         <h3>Leadership & Involvement</h3>
-        <p>At Toca Juniors Football Club in Bethesda, I chaperoned international tours to Sweden, Denmark, and Argentina, and helped launch the club’s adult division in 2023. During my time at the University of Maryland, I served as Treasurer and Executive Board Member for the Men’s Club Soccer Team, managing team finances and coordinating operations for a 23-player squad.</p>
       </div>
+      <p>At Toca Juniors Football Club in Bethesda, I chaperoned international tours to Sweden, Denmark, and Argentina, and helped launch the club’s adult division in 2023. During my time at the University of Maryland, I served as Treasurer and Executive Board Member for the Men’s Club Soccer Team, managing team finances and coordinating operations for a 23-player squad.</p>
     </div>
 
     <div class="card">
-      <div class="icon-emoji">💡</div>
-      <div class="card-content">
+      <div class="card-header">
+        <div class="icon-emoji">💻</div>
         <h3>Skills & Interests</h3>
-        <p>I am fluent in Spanish and English. I’m skilled in Tableau, SPSS, R, SQL, Qualtrics, and the full Microsoft Office Suite. I enjoy applying data tools in both academic and real-world settings.</p>
       </div>
+      <p>I am fluent in Spanish and English. I’m skilled in Tableau, SPSS, R, SQL, Qualtrics, and the full Microsoft Office Suite. I enjoy applying data tools in both academic and real-world settings.</p>
     </div>
 
     <div class="download-section">
