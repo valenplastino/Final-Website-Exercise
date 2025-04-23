@@ -70,6 +70,18 @@
       padding: 25px;
       box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
       margin-bottom: 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+    }
+
+    .icon-emoji {
+      font-size: 24px;
+      margin-top: 4px;
+    }
+
+    .card-content {
+      flex: 1;
     }
 
     .card h3 {
@@ -77,17 +89,6 @@
       margin-bottom: 10px;
       font-size: 20px;
     }
-
-    .card h3::before {
-      display: inline-block;
-      margin-right: 10px;
-      font-size: 20px;
-    }
-
-    .card:nth-of-type(2) h3::before { content: "👤"; }
-    .card:nth-of-type(3) h3::before { content: "🎓"; }
-    .card:nth-of-type(4) h3::before { content: "⚽"; }
-    .card:nth-of-type(5) h3::before { content: "💡"; }
 
     .card p {
       font-size: 16px;
@@ -151,18 +152,13 @@
         display: flex;
       }
 
-      .download-btn {
-        font-size: 14px;
-        padding: 10px 20px;
+      .card {
+        flex-direction: column;
+        align-items: flex-start;
       }
 
-      .card p,
-      .download-section p {
-        font-size: 15px;
-      }
-
-      .download-section h3 {
-        font-size: 20px;
+      .icon-emoji {
+        margin-bottom: 10px;
       }
     }
   </style>
@@ -186,23 +182,35 @@
     <h2 class="section-title">About</h2>
 
     <div class="card">
-      <h3>Personal Background</h3>
-      <p>I’m 23 years old and originally from Argentina. I moved to the United States 10 years ago and am fluent in both Spanish and English.</p>
+      <div class="icon-emoji">👤</div>
+      <div class="card-content">
+        <h3>Personal Background</h3>
+        <p>I’m 23 years old and originally from Argentina. I moved to the United States 10 years ago and am fluent in both Spanish and English.</p>
+      </div>
     </div>
 
     <div class="card">
-      <h3>Academic Background</h3>
-      <p>I’m currently pursuing a Master’s in Management at Georgetown University with a GPA of 3.77. I earned my Bachelor of Science in Management and Marketing from the University of Maryland, where I also completed a minor in Real Estate Development focused on investment and financial analysis.</p>
+      <div class="icon-emoji">🎓</div>
+      <div class="card-content">
+        <h3>Academic Background</h3>
+        <p>I’m currently pursuing a Master’s in Management at Georgetown University with a GPA of 3.77. I earned my Bachelor of Science in Management and Marketing from the University of Maryland, where I also completed a minor in Real Estate Development focused on investment and financial analysis.</p>
+      </div>
     </div>
 
     <div class="card">
-      <h3>Leadership & Involvement</h3>
-      <p>At Toca Juniors Football Club in Bethesda, I chaperoned international tours to Sweden, Denmark, and Argentina, and helped launch the club’s adult division in 2023. During my time at the University of Maryland, I served as Treasurer and Executive Board Member for the Men’s Club Soccer Team, managing team finances and coordinating operations for a 23-player squad.</p>
+      <div class="icon-emoji">🤝</div>
+      <div class="card-content">
+        <h3>Leadership & Involvement</h3>
+        <p>At Toca Juniors Football Club in Bethesda, I chaperoned international tours to Sweden, Denmark, and Argentina, and helped launch the club’s adult division in 2023. During my time at the University of Maryland, I served as Treasurer and Executive Board Member for the Men’s Club Soccer Team, managing team finances and coordinating operations for a 23-player squad.</p>
+      </div>
     </div>
 
     <div class="card">
-      <h3>Skills & Interests</h3>
-      <p>I am fluent in Spanish and English. I’m skilled in Tableau, SPSS, R, SQL, Qualtrics, and the full Microsoft Office Suite. I enjoy applying data tools in both academic and real-world settings.</p>
+      <div class="icon-emoji">💡</div>
+      <div class="card-content">
+        <h3>Skills & Interests</h3>
+        <p>I am fluent in Spanish and English. I’m skilled in Tableau, SPSS, R, SQL, Qualtrics, and the full Microsoft Office Suite. I enjoy applying data tools in both academic and real-world settings.</p>
+      </div>
     </div>
 
     <div class="download-section">
