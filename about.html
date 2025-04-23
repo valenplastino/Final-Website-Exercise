@@ -75,13 +75,16 @@
     .card-header {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
+      flex-wrap: nowrap;
       margin-bottom: 10px;
     }
 
     .icon-emoji {
       font-size: 22px;
       flex-shrink: 0;
+      width: 24px;
+      text-align: center;
     }
 
     .card h3 {
@@ -153,8 +156,10 @@
       }
 
       .card-header {
-        flex-direction: row; /* keeps emoji to the left even on mobile */
+        flex-direction: row;
         align-items: center;
+        gap: 10px;
+        flex-wrap: nowrap;
       }
 
       .card h3 {
@@ -163,7 +168,7 @@
 
       .icon-emoji {
         font-size: 20px;
-        margin-right: 8px;
+        width: 24px;
       }
 
       .download-btn {
